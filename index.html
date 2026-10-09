@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Photo Gallery</h1>
+
+  <div id="image" class="display">Hover over an image below to display here.</div>
+
+  <div class="gallery">
+    <img class="preview" src="photo1.jpg" alt="Witch and Mercenary volume 1 novel cover"
+         onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    <img class="preview" src="photo2.jpg" alt="Shadow Slave fan art"
+         onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+    <img class="preview" src="photo3.jpg" alt="Tower Dungeon"
+         onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
